@@ -1,0 +1,29 @@
+% 文本框，用来显示“Ground truth：”字样
+
+% 1、框轮廓：实线
+hold on;
+annotation('textbox',...               % 属性：textbox文本框
+    'Position',[0.1 0.5 0.09 0.03],... % 位置和尺寸，四元素向量[x_begin y_begin length height]。前两个元素指定文本框的左下角坐标，后两个元素指定文本框的长度和高度。默认情况下，使用归一化的图窗单位。图窗的左下角映射到 (0,0)，右上角映射到 (1,1)。
+    'String',{'Ground truth:'},...     % 要显示的文本
+    'HorizontalAlignment','left',...   % 文本框中文本的水平对齐方式："left" (默认) | "center" | "right"
+    'VerticalAlignment','middle',...   % 文本框中文本的垂直对齐方式：'top' (默认) | 'middle' | 'bottom'
+    'FontWeight','normal',...          % 字体粗细
+    'FontSize',20,...                  % 字体大小
+    'FontAngle','oblique',...          % 字体倾斜
+    'FitBoxToText','off',...           % 使框宽和框高适合文本的选项：'on' (默认) | on/off 逻辑值
+    'LineStyle','-',...                % 框轮廓的线型：'none'、'-'(默认)、'--'、'-.'、':'
+    'EdgeColor', [1 0 0]);             % 框轮廓的颜色：[0 0 0] (default) | RGB triplet | hexadecimal color code | "r" | "g" | "b" | ...               
+
+% 2、框轮廓：实线
+hold on;
+annotation('textbox',...               % 属性：textbox文本框
+    'Position',[0.2 0.5 0.3 0.3],... % 位置和尺寸，四元素向量[x_begin y_begin length height]。
+    'String',{'Ground truth:'},...     
+    'HorizontalAlignment','left',...   
+    'VerticalAlignment','middle',...   
+    'FontWeight','normal',...        
+    'FontSize',20,...                 
+    'FontAngle','oblique',...         
+    'FitBoxToText','off',...          
+    'LineStyle','-',...              
+    'EdgeColor', [0 1 0]);          % 绿色的边框
